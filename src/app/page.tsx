@@ -41,18 +41,45 @@ export default function LandingPage() {
     <div className="bg-[#f9f9f9] min-h-screen text-[#1a1c1c] font-body antialiased flex flex-col">
       <PublicNavbar />
 
-      {/* Hero Search Section */}
+      {/* Hero Video Section */}
       <header className="pt-20 bg-white relative min-h-[500px] flex flex-col items-center justify-center">
         <div className="absolute inset-0 z-0 overflow-hidden">
-           <img src="https://images.unsplash.com/photo-1615880480595-f5f9b4fb530e?q=80&w=2000&auto=format&fit=crop" className="w-full h-full object-cover" alt="Grussaí" />
-           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30"></div>
+           <video
+             id="hero-video-1"
+             className="w-full h-full object-cover"
+             autoPlay
+             muted
+             playsInline
+             onEnded={() => {
+               const v1 = document.getElementById('hero-video-1') as HTMLVideoElement;
+               const v2 = document.getElementById('hero-video-2') as HTMLVideoElement;
+               if (v1 && v2) { v1.style.display = 'none'; v2.style.display = 'block'; v2.play(); }
+             }}
+           >
+             <source src="/video-frente.mp4" type="video/mp4" />
+           </video>
+           <video
+             id="hero-video-2"
+             className="w-full h-full object-cover"
+             style={{ display: 'none' }}
+             muted
+             playsInline
+             loop
+             onEnded={() => {
+               const v2 = document.getElementById('hero-video-2') as HTMLVideoElement;
+               if (v2) v2.play();
+             }}
+           >
+             <source src="/video-cima.mp4" type="video/mp4" />
+           </video>
+           <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/25"></div>
         </div>
         
         <div className="relative z-10 w-full max-w-4xl mx-auto px-6 text-center animate-fade-in-up">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-8 tracking-wide drop-shadow-lg font-[family-name:var(--font-cinzel-decorative)]">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-6 tracking-wide drop-shadow-lg font-[family-name:var(--font-cinzel-decorative)]">
             <span className="text-primary">Pousada</span> <span className="text-tertiary">Portugueza</span>
           </h1>
-          <p className="text-lg md:text-xl text-white/80 mb-8 font-body tracking-wide">Hospedagem premium em Grussaí — o charme luso no coração do Porto do Açu</p>
+          <p className="text-base md:text-lg text-white/80 mb-8 font-body tracking-wide">Hospedagem premium em Grussaí — o charme luso no coração do Porto do Açu</p>
           
           <div className="flex flex-col md:flex-row items-center justify-between bg-white/90 backdrop-blur-xl border border-white/20 rounded-full py-2 px-4 shadow-[0_32px_64px_rgba(0,0,0,0.2)] md:hover:scale-[1.02] transition-transform cursor-pointer mx-auto max-w-3xl">
             <div className="flex-1 w-full md:w-auto px-6 py-2 md:border-r border-zinc-200">
