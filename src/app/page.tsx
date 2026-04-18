@@ -75,28 +75,28 @@ export default function LandingPage() {
            <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/25"></div>
         </div>
         
-        <div className="relative z-10 w-full max-w-4xl mx-auto px-6 text-center animate-fade-in-up">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-6 tracking-wide drop-shadow-lg font-[family-name:var(--font-cinzel-decorative)]">
+        <div className="relative z-10 w-full max-w-2xl mx-auto px-6 text-center animate-fade-in-up mt-auto mb-12">
+          <h1 className="text-xl md:text-2xl lg:text-3xl font-black text-white mb-3 tracking-wide drop-shadow-lg font-[family-name:var(--font-cinzel-decorative)]">
             <span className="text-primary">Pousada</span> <span className="text-tertiary">Portugueza</span>
           </h1>
-          <p className="text-base md:text-lg text-white/80 mb-8 font-body tracking-wide">Hospedagem premium em Grussaí — o charme luso no coração do Porto do Açu</p>
+          <p className="text-sm md:text-base text-white/80 mb-6 font-body tracking-wide">Hospedagem premium em São João da Barra</p>
           
-          <div className="flex flex-col md:flex-row items-center justify-between bg-white/90 backdrop-blur-xl border border-white/20 rounded-full py-2 px-4 shadow-[0_32px_64px_rgba(0,0,0,0.2)] md:hover:scale-[1.02] transition-transform cursor-pointer mx-auto max-w-3xl">
-            <div className="flex-1 w-full md:w-auto px-6 py-2 md:border-r border-zinc-200">
-              <div className="text-[10px] font-bold uppercase tracking-wider text-[#1a1c1c]">Onde</div>
-              <div className="text-sm text-zinc-500">Grussaí, RJ</div>
+          <div className="flex flex-col md:flex-row items-center justify-between bg-white/90 backdrop-blur-xl border border-white/20 rounded-full py-1.5 px-3 shadow-[0_32px_64px_rgba(0,0,0,0.2)] md:hover:scale-[1.02] transition-transform cursor-pointer mx-auto max-w-xl">
+            <div className="flex-1 w-full md:w-auto px-4 py-1.5 md:border-r border-zinc-200">
+              <div className="text-[9px] font-bold uppercase tracking-wider text-[#1a1c1c]">Onde</div>
+              <div className="text-xs text-zinc-500">São João da Barra, RJ</div>
             </div>
-            <div className="flex-1 w-full md:w-auto px-6 py-2 md:border-r border-zinc-200 border-t md:border-t-0">
-              <div className="text-[10px] font-bold uppercase tracking-wider text-[#1a1c1c]">Quando</div>
-              <div className="text-sm text-zinc-500">Insira as datas</div>
+            <div className="flex-1 w-full md:w-auto px-4 py-1.5 md:border-r border-zinc-200 border-t md:border-t-0">
+              <div className="text-[9px] font-bold uppercase tracking-wider text-[#1a1c1c]">Quando</div>
+              <div className="text-xs text-zinc-500">Insira as datas</div>
             </div>
-            <div className="flex-1 w-full md:w-auto px-6 py-2 border-t md:border-t-0">
-              <div className="text-[10px] font-bold uppercase tracking-wider text-[#1a1c1c]">Quem</div>
-              <div className="text-sm text-zinc-500">Hóspedes</div>
+            <div className="flex-1 w-full md:w-auto px-4 py-1.5 border-t md:border-t-0">
+              <div className="text-[9px] font-bold uppercase tracking-wider text-[#1a1c1c]">Quem</div>
+              <div className="text-xs text-zinc-500">Hóspedes</div>
             </div>
-            <button className="bg-tertiary p-4 rounded-full text-white flex items-center justify-center hover:scale-105 transition-transform shadow-lg w-full md:w-auto mt-2 md:mt-0">
-              <span className="material-symbols-outlined text-xl">search</span>
-              <span className="md:hidden ml-2 font-bold">Buscar</span>
+            <button className="bg-tertiary p-3 rounded-full text-white flex items-center justify-center hover:scale-105 transition-transform shadow-lg w-full md:w-auto mt-1.5 md:mt-0">
+              <span className="material-symbols-outlined text-lg">search</span>
+              <span className="md:hidden ml-2 font-bold text-xs">Buscar</span>
             </button>
           </div>
         </div>
