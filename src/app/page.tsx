@@ -76,10 +76,10 @@ export default function LandingPage() {
         </div>
         
         <div className="relative z-10 w-full max-w-2xl mx-auto px-6 text-center animate-fade-in-up mt-auto mb-12">
-          <h1 className="text-xl md:text-2xl lg:text-3xl font-black text-white mb-3 tracking-wide drop-shadow-lg font-[family-name:var(--font-cinzel-decorative)]">
+          <h1 className="text-xl md:text-2xl lg:text-3xl font-black mb-3 tracking-wide drop-shadow-lg font-[family-name:var(--font-cinzel-decorative)]" style={{ WebkitTextStroke: '1.5px white' }}>
             <span className="text-primary">Pousada</span> <span className="text-tertiary">Portugueza</span>
           </h1>
-          <p className="text-sm md:text-base text-white/80 mb-6 font-body tracking-wide">Hospedagem premium em São João da Barra</p>
+          <p className="text-sm md:text-base text-white mb-6 font-body tracking-wide drop-shadow-md">Hospedagem Familiar em Grussaí — São João da Barra</p>
           
           <div className="flex flex-col md:flex-row items-center justify-between bg-white/90 backdrop-blur-xl border border-white/20 rounded-full py-1.5 px-3 shadow-[0_32px_64px_rgba(0,0,0,0.2)] md:hover:scale-[1.02] transition-transform cursor-pointer mx-auto max-w-xl">
             <div className="flex-1 w-full md:w-auto px-4 py-1.5 md:border-r border-zinc-200">
