@@ -64,7 +64,11 @@ export default function LandingPage() {
              style={{ display: 'none' }}
              muted
              playsInline
-             loop
+             onEnded={() => {
+               const v1 = document.getElementById('hero-video-1') as HTMLVideoElement;
+               const v2 = document.getElementById('hero-video-2') as HTMLVideoElement;
+               if (v1 && v2) { v2.style.display = 'none'; v1.style.display = 'block'; v1.play(); }
+             }}
            >
              <source src="/video-cima.mp4" type="video/mp4" />
            </video>
