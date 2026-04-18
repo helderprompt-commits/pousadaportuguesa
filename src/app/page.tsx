@@ -49,9 +49,10 @@ export default function LandingPage() {
         </div>
         
         <div className="relative z-10 w-full max-w-4xl mx-auto px-6 text-center animate-fade-in-up">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-8 tracking-tight drop-shadow-lg">
-            Hospedagem premium em <span className="text-secondary">Grussaí</span>.
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-8 tracking-wide drop-shadow-lg font-[family-name:var(--font-cinzel-decorative)]">
+            <span className="text-secondary">Pousada</span> <span className="text-tertiary">Portugueza</span>
           </h1>
+          <p className="text-lg md:text-xl text-white/80 mb-8 font-body tracking-wide">Hospedagem premium em Grussaí — o charme luso no coração do Porto do Açu</p>
           
           <div className="flex flex-col md:flex-row items-center justify-between bg-white/90 backdrop-blur-xl border border-white/20 rounded-full py-2 px-4 shadow-[0_32px_64px_rgba(0,0,0,0.2)] md:hover:scale-[1.02] transition-transform cursor-pointer mx-auto max-w-3xl">
             <div className="flex-1 w-full md:w-auto px-6 py-2 md:border-r border-zinc-200">
@@ -66,7 +67,7 @@ export default function LandingPage() {
               <div className="text-[10px] font-bold uppercase tracking-wider text-[#1a1c1c]">Quem</div>
               <div className="text-sm text-zinc-500">Hóspedes</div>
             </div>
-            <button className="bg-primary p-4 rounded-full text-white flex items-center justify-center hover:scale-105 transition-transform shadow-lg w-full md:w-auto mt-2 md:mt-0">
+            <button className="bg-tertiary p-4 rounded-full text-white flex items-center justify-center hover:scale-105 transition-transform shadow-lg w-full md:w-auto mt-2 md:mt-0">
               <span className="material-symbols-outlined text-xl">search</span>
               <span className="md:hidden ml-2 font-bold">Buscar</span>
             </button>
@@ -127,7 +128,7 @@ export default function LandingPage() {
         {/* Why Choose Us Section */}
         <section className="mt-24 bg-white rounded-3xl p-10 md:p-16 shadow-sm border border-zinc-100 flex flex-col lg:flex-row gap-12 animate-fade-in-up">
           <div className="lg:w-1/3">
-            <h2 className="text-3xl font-extrabold text-zinc-900 mb-4 tracking-tight">O Destino Ideal no <span className="text-secondary">Porto do Açu</span></h2>
+            <h2 className="text-3xl font-extrabold text-zinc-900 mb-4 tracking-tight">O Destino Ideal no <span className="text-primary">Porto do Açu</span></h2>
             <p className="text-zinc-600 leading-relaxed">Infraestrutura preparada para receber gestores de logística, engenheiros e familiares buscando tranquilidade em São João da Barra.</p>
           </div>
           <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-8">

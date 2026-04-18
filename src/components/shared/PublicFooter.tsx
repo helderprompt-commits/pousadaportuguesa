@@ -17,7 +17,7 @@ export const PublicFooter: React.FC = () => {
               placeholder="seu@email.com"
               className="flex-1 lg:w-80 bg-white/10 border border-white/20 rounded-full px-6 py-3.5 text-sm text-white placeholder:text-white/40 outline-none focus:border-white/50 focus:bg-white/15 transition-colors"
             />
-            <button className="bg-secondary text-white px-8 py-3.5 rounded-full font-bold text-sm hover:bg-secondary/90 transition-colors shadow-lg whitespace-nowrap">
+            <button className="bg-tertiary text-white px-8 py-3.5 rounded-full font-bold text-sm hover:bg-tertiary/90 transition-colors shadow-lg whitespace-nowrap">
               Assinar
             </button>
           </div>
@@ -47,7 +47,7 @@ export const PublicFooter: React.FC = () => {
           <div>
             <h4 className="font-bold text-xs uppercase tracking-[0.2em] text-white/40 mb-6">Empresa</h4>
             <ul className="space-y-4 text-sm">
-              <li><span className="text-white/70 hover:text-white transition-colors cursor-pointer">Sobre o Residencial Luso</span></li>
+              <li><span className="text-white/70 hover:text-white transition-colors cursor-pointer">Sobre a Pousada Portugueza</span></li>
               <li><span className="text-white/70 hover:text-white transition-colors cursor-pointer">Localização Grussaí</span></li>
               <li><Link href="/admin" className="text-white/70 hover:text-white transition-colors flex items-center gap-1.5">
                 <span className="material-symbols-outlined text-[13px]">lock</span> Acesso Admin
@@ -72,7 +72,7 @@ export const PublicFooter: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-20 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-3">
             <img src="/logo.png" alt="Residencial Luso" className="h-8 w-auto object-contain opacity-60" />
-            <span className="text-white/40 text-xs font-medium">© 2026 Residencial Luso Locações Corporativas</span>
+            <span className="text-white/40 text-xs font-medium">© 2026 Pousada Portugueza</span>
           </div>
           <div className="flex items-center gap-6 text-xs text-white/40">
             <span className="hover:text-white/70 cursor-pointer transition-colors">Privacidade</span>
