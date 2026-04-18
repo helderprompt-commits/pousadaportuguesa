@@ -1,0 +1,56 @@
+{
+  "systemRoles": {
+    "currentUser": {
+      "name": "Ana Gerente",
+      "role": "Administradora",
+      "initials": "AG"
+    }
+  },
+  "kpis": {
+    "occupancy": {
+      "label": "Ocupação Hoje",
+      "value": "75%",
+      "trendString": "+5%",
+      "isPositiveTrend": true
+    },
+    "checkins": {
+      "label": "Check-ins Hoje",
+      "value": 12,
+      "trendString": "Normal",
+      "isPositiveTrend": true
+    },
+    "monthlyRevenue": {
+      "label": "Receita (Mês)",
+      "value": "R$ 45.200",
+      "trendString": "+12%",
+      "isPositiveTrend": true
+    },
+    "averageRating": {
+      "label": "Avaliação Média",
+      "value": 4.9,
+      "trendString": "+0.1",
+      "isPositiveTrend": true
+    }
+  },
+  "quickActions": [
+    {
+      "id": "action_tenant",
+      "title": "Cadastrar Inquilino",
+      "subtitle": "Aluguel longa duração",
+      "icon": "Users"
+    },
+    {
+      "id": "action_property",
+      "title": "Adicionar Imóvel",
+      "subtitle": "Casa ou Suíte",
+      "icon": "Home"
+    },
+    {
+      "id": "action_report",
+      "title": "Relatório Financeiro",
+      "subtitle": "Ver exportação do mês",
+      "icon": "TrendingUp"
+    }
+  ],
+  "recentReservations": []
+}

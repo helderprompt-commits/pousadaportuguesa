@@ -1,0 +1,68 @@
+{
+  "siteMetadata": {
+    "title": "Pousada Portugueza | Grussaí RJ",
+    "description": "Acomodações e hospedagem de longa duração no centro de Grussaí.",
+    "colors": {
+      "primary": "#1A6B3A",
+      "secondary": "#F57C00",
+      "background": "#FFFFFF",
+      "text": "#212121"
+    }
+  },
+  "heroConfig": {
+    "searchBox": {
+      "label1": "Onde",
+      "placeholder1": "Grussaí, Rio de Janeiro",
+      "label2": "Check-in",
+      "placeholder2": "Insira as datas",
+      "label3": "Quem",
+      "placeholder3": "Hóspedes?"
+    }
+  },
+  "accommodations": [
+    {
+      "id": "acc-001",
+      "title": "Casa Espaçosa - Praia",
+      "datesAvailable": "10-12 de abr.",
+      "pricePerNight": 856,
+      "rating": 4.94,
+      "imageUrl": "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2",
+      "badge": "Preferido dos hóspedes",
+      "type": "casa_inteira",
+      "amenities": ["Wi-Fi", "Ar Condicionado", "Cozinha"]
+    },
+    {
+      "id": "acc-002",
+      "title": "Suíte Master - Vista Mar",
+      "datesAvailable": "15-17 de mai.",
+      "pricePerNight": 371,
+      "rating": 4.98,
+      "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267",
+      "badge": "Luxo",
+      "type": "suite",
+      "amenities": ["Wi-Fi", "Frigobar", "Varanda"]
+    },
+    {
+      "id": "acc-003",
+      "title": "Chalé Aconchegante",
+      "datesAvailable": "24-26 de abr.",
+      "pricePerNight": 229,
+      "rating": 4.77,
+      "imageUrl": "https://images.unsplash.com/photo-1587061949409-02df41d5e562",
+      "badge": null,
+      "type": "chale",
+      "amenities": ["Wi-Fi", "Estacionamento"]
+    },
+    {
+      "id": "acc-005",
+      "title": "Quarto Standard - Executivo",
+      "datesAvailable": "24-26 de abr.",
+      "pricePerNight": 548,
+      "rating": 5.00,
+      "imageUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2",
+      "badge": "Corporativo",
+      "type": "quarto",
+      "amenities": ["Wi-Fi Alta Velocidade", "Mesa de Trabalho"]
+    }
+  ]
+}
