@@ -21,25 +21,25 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
   
   const publicCard = (
     <div className="group cursor-pointer opacity-0 animate-fade-in-up" style={{ animationDelay: `${animationDelay}ms` }} onClick={onClick}>
-      <div className="relative aspect-square overflow-hidden rounded-xl mb-3 card-hover-lift">
+      <div className="relative aspect-[4/3] sm:aspect-square overflow-hidden rounded-xl mb-3 card-hover-lift">
         <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src={image} alt={title} />
-        <button className="absolute top-3 right-3 text-white/90 hover:text-[#800000] drop-shadow-md transition-colors z-10" onClick={(e) => e.stopPropagation()}>
-          <span className="material-symbols-outlined">favorite</span>
+        <button className="absolute top-2 right-2 sm:top-3 sm:right-3 w-10 h-10 sm:w-8 sm:h-8 flex items-center justify-center text-white/90 hover:text-[#800000] drop-shadow-md transition-colors z-10" onClick={(e) => e.stopPropagation()}>
+          <span className="material-symbols-outlined text-xl sm:text-base">favorite</span>
         </button>
       </div>
-      <div className="flex justify-between items-start">
-        <div>
-          <h3 className="font-bold text-zinc-900 line-clamp-1">{title}</h3>
-          <p className="text-sm text-zinc-500">{location}</p>
-          {status && <p className="text-sm text-zinc-500">{status}</p>}
+      <div className="flex justify-between items-start gap-2">
+        <div className="min-w-0">
+          <h3 className="font-bold text-zinc-900 line-clamp-1 text-sm sm:text-base">{title}</h3>
+          <p className="text-xs sm:text-sm text-zinc-500 line-clamp-1">{location}</p>
+          {status && <p className="text-xs sm:text-sm text-zinc-500 line-clamp-1">{status}</p>}
           <div className="mt-1">
-            <span className="font-bold">{price}</span> <span className="text-zinc-500">{period}</span>
+            <span className="font-bold text-sm sm:text-base">{price}</span> <span className="text-zinc-500 text-xs sm:text-sm">{period}</span>
           </div>
         </div>
         {rating && (
           <div className="flex items-center space-x-1 shrink-0">
-            <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-            <span className="text-sm">{rating}</span>
+            <span className="material-symbols-outlined text-xs sm:text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+            <span className="text-xs sm:text-sm">{rating}</span>
           </div>
         )}
       </div>

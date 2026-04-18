@@ -75,26 +75,26 @@ export default function LandingPage() {
            <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/25"></div>
         </div>
         
-        <div className="relative z-10 w-full max-w-2xl mx-auto px-6 text-center animate-fade-in-up mt-auto mb-12">
-          <h1 className="text-xl md:text-2xl lg:text-3xl font-black mb-3 tracking-wide drop-shadow-lg font-[family-name:var(--font-cinzel-decorative)]" style={{ WebkitTextStroke: '1.5px white' }}>
+        <div className="relative z-10 w-full max-w-2xl mx-auto px-4 sm:px-6 text-center animate-fade-in-up mt-auto mb-8 sm:mb-12">
+          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black mb-2 sm:mb-3 tracking-wide drop-shadow-lg font-[family-name:var(--font-cinzel-decorative)] whitespace-nowrap" style={{ WebkitTextStroke: '1px white' }}>
             <span className="text-primary">Pousada</span> <span className="text-tertiary">Portugueza</span>
           </h1>
-          <p className="text-sm md:text-base text-white mb-6 font-body tracking-wide drop-shadow-md">Hospedagem Familiar em Grussaí — São João da Barra</p>
+          <p className="text-xs sm:text-sm md:text-base text-white mb-4 sm:mb-6 font-body tracking-wide drop-shadow-md whitespace-nowrap">Hospedagem Familiar em Grussaí — São João da Barra</p>
           
-          <div className="flex flex-col md:flex-row items-center justify-between bg-white/90 backdrop-blur-xl border border-white/20 rounded-full py-1.5 px-3 shadow-[0_32px_64px_rgba(0,0,0,0.2)] md:hover:scale-[1.02] transition-transform cursor-pointer mx-auto max-w-xl">
-            <div className="flex-1 w-full md:w-auto px-4 py-1.5 md:border-r border-zinc-200">
-              <div className="text-[9px] font-bold uppercase tracking-wider text-[#1a1c1c]">Onde</div>
-              <div className="text-xs text-zinc-500">São João da Barra, RJ</div>
+          <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between bg-white/90 backdrop-blur-xl border border-white/20 rounded-2xl md:rounded-full py-2 px-3 md:py-1.5 md:px-3 shadow-[0_32px_64px_rgba(0,0,0,0.2)] md:hover:scale-[1.02] transition-transform cursor-pointer mx-auto max-w-xl gap-1 md:gap-0">
+            <div className="flex-1 w-full md:w-auto px-4 py-2.5 md:py-1.5 md:border-r border-zinc-200">
+              <div className="text-[10px] sm:text-[9px] font-bold uppercase tracking-wider text-[#1a1c1c]">Onde</div>
+              <div className="text-xs sm:text-xs text-zinc-500 whitespace-nowrap">São João da Barra, RJ</div>
             </div>
-            <div className="flex-1 w-full md:w-auto px-4 py-1.5 md:border-r border-zinc-200 border-t md:border-t-0">
-              <div className="text-[9px] font-bold uppercase tracking-wider text-[#1a1c1c]">Quando</div>
-              <div className="text-xs text-zinc-500">Insira as datas</div>
+            <div className="flex-1 w-full md:w-auto px-4 py-2.5 md:py-1.5 md:border-r border-zinc-200 border-t md:border-t-0">
+              <div className="text-[10px] sm:text-[9px] font-bold uppercase tracking-wider text-[#1a1c1c]">Quando</div>
+              <div className="text-xs sm:text-xs text-zinc-500 whitespace-nowrap">Insira as datas</div>
             </div>
-            <div className="flex-1 w-full md:w-auto px-4 py-1.5 border-t md:border-t-0">
-              <div className="text-[9px] font-bold uppercase tracking-wider text-[#1a1c1c]">Quem</div>
-              <div className="text-xs text-zinc-500">Hóspedes</div>
+            <div className="flex-1 w-full md:w-auto px-4 py-2.5 md:py-1.5 border-t md:border-t-0">
+              <div className="text-[10px] sm:text-[9px] font-bold uppercase tracking-wider text-[#1a1c1c]">Quem</div>
+              <div className="text-xs sm:text-xs text-zinc-500 whitespace-nowrap">Hóspedes</div>
             </div>
-            <button className="bg-tertiary p-3 rounded-full text-white flex items-center justify-center hover:scale-105 transition-transform shadow-lg w-full md:w-auto mt-1.5 md:mt-0">
+            <button className="bg-tertiary min-h-[44px] md:min-h-0 md:p-3 p-3 rounded-xl md:rounded-full text-white flex items-center justify-center hover:scale-105 transition-transform shadow-lg w-full md:w-auto">
               <span className="material-symbols-outlined text-lg">search</span>
               <span className="md:hidden ml-2 font-bold text-xs">Buscar</span>
             </button>
@@ -103,40 +103,40 @@ export default function LandingPage() {
       </header>
 
       {/* Categories Sub-header */}
-      <div className="sticky top-20 z-40 bg-white/90 backdrop-blur-md pt-4 pb-2 shadow-sm border-t border-zinc-100">
-        <div className="max-w-[1600px] mx-auto px-6 md:px-20">
-          <div className="flex items-center space-x-10 overflow-x-auto no-scrollbar py-2">
-            <div className="flex flex-col items-center space-y-2 cursor-pointer group min-w-max pb-2 border-b-2 border-zinc-900">
-              <span className="material-symbols-outlined text-zinc-900 group-hover:text-secondary transition-colors">landscape</span>
-              <span className="text-xs font-semibold text-zinc-900">Todas</span>
+      <div className="sticky top-16 sm:top-20 z-40 bg-white/90 backdrop-blur-md pt-3 sm:pt-4 pb-2 shadow-sm border-t border-zinc-100">
+        <div className="max-w-[1600px] mx-auto px-4 sm:px-6 md:px-20">
+          <div className="flex items-center space-x-6 sm:space-x-10 overflow-x-auto no-scrollbar py-2">
+            <div className="flex flex-col items-center space-y-1.5 cursor-pointer group min-w-[56px] sm:min-w-max pb-2 border-b-2 border-zinc-900">
+              <span className="material-symbols-outlined text-zinc-900 group-hover:text-secondary transition-colors text-xl sm:text-base">landscape</span>
+              <span className="text-[11px] sm:text-xs font-semibold text-zinc-900 whitespace-nowrap">Todas</span>
             </div>
-            <div className="flex flex-col items-center space-y-2 cursor-pointer group min-w-max pb-2 border-b-2 border-transparent hover:border-zinc-300">
-              <span className="material-symbols-outlined text-zinc-500 group-hover:text-zinc-900 transition-colors">diamond</span>
-              <span className="text-xs font-medium text-zinc-500 group-hover:text-zinc-900">Luxo</span>
+            <div className="flex flex-col items-center space-y-1.5 cursor-pointer group min-w-[56px] sm:min-w-max pb-2 border-b-2 border-transparent hover:border-zinc-300">
+              <span className="material-symbols-outlined text-zinc-500 group-hover:text-zinc-900 transition-colors text-xl sm:text-base">diamond</span>
+              <span className="text-[11px] sm:text-xs font-medium text-zinc-500 group-hover:text-zinc-900 whitespace-nowrap">Luxo</span>
             </div>
-            <div className="flex flex-col items-center space-y-2 cursor-pointer group min-w-max pb-2 border-b-2 border-transparent hover:border-zinc-300">
-              <span className="material-symbols-outlined text-zinc-500 group-hover:text-zinc-900 transition-colors">trending_up</span>
-              <span className="text-xs font-medium text-zinc-500 group-hover:text-zinc-900">Em Alta</span>
+            <div className="flex flex-col items-center space-y-1.5 cursor-pointer group min-w-[56px] sm:min-w-max pb-2 border-b-2 border-transparent hover:border-zinc-300">
+              <span className="material-symbols-outlined text-zinc-500 group-hover:text-zinc-900 transition-colors text-xl sm:text-base">trending_up</span>
+              <span className="text-[11px] sm:text-xs font-medium text-zinc-500 group-hover:text-zinc-900 whitespace-nowrap">Em Alta</span>
             </div>
-            <div className="flex flex-col items-center space-y-2 cursor-pointer group min-w-max pb-2 border-b-2 border-transparent hover:border-zinc-300">
-              <span className="material-symbols-outlined text-zinc-500 group-hover:text-zinc-900 transition-colors">pool</span>
-              <span className="text-xs font-medium text-zinc-500 group-hover:text-zinc-900">Piscina</span>
+            <div className="flex flex-col items-center space-y-1.5 cursor-pointer group min-w-[56px] sm:min-w-max pb-2 border-b-2 border-transparent hover:border-zinc-300">
+              <span className="material-symbols-outlined text-zinc-500 group-hover:text-zinc-900 transition-colors text-xl sm:text-base">pool</span>
+              <span className="text-[11px] sm:text-xs font-medium text-zinc-500 group-hover:text-zinc-900 whitespace-nowrap">Piscina</span>
             </div>
-            <div className="flex flex-col items-center space-y-2 cursor-pointer group min-w-max pb-2 border-b-2 border-transparent hover:border-zinc-300">
-              <span className="material-symbols-outlined text-zinc-500 group-hover:text-zinc-900 transition-colors">beach_access</span>
-              <span className="text-xs font-medium text-zinc-500 group-hover:text-zinc-900">Frente Mar</span>
+            <div className="flex flex-col items-center space-y-1.5 cursor-pointer group min-w-[56px] sm:min-w-max pb-2 border-b-2 border-transparent hover:border-zinc-300">
+              <span className="material-symbols-outlined text-zinc-500 group-hover:text-zinc-900 transition-colors text-xl sm:text-base">beach_access</span>
+              <span className="text-[11px] sm:text-xs font-medium text-zinc-500 group-hover:text-zinc-900 whitespace-nowrap">Frente Mar</span>
             </div>
-            <div className="flex flex-col items-center space-y-2 cursor-pointer group min-w-max pb-2 border-b-2 border-transparent hover:border-zinc-300">
-              <span className="material-symbols-outlined text-zinc-500 group-hover:text-zinc-900 transition-colors">business_center</span>
-              <span className="text-xs font-medium text-zinc-500 group-hover:text-zinc-900">Corporativo</span>
+            <div className="flex flex-col items-center space-y-1.5 cursor-pointer group min-w-[56px] sm:min-w-max pb-2 border-b-2 border-transparent hover:border-zinc-300">
+              <span className="material-symbols-outlined text-zinc-500 group-hover:text-zinc-900 transition-colors text-xl sm:text-base">business_center</span>
+              <span className="text-[11px] sm:text-xs font-medium text-zinc-500 group-hover:text-zinc-900 whitespace-nowrap">Corporativo</span>
             </div>
           </div>
         </div>
       </div>
 
       {/* Main Content Grid */}
-      <main className="max-w-[1600px] w-full mx-auto px-6 md:px-20 py-12 flex-1">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-10">
+      <main className="max-w-[1600px] w-full mx-auto px-4 sm:px-6 md:px-20 py-8 sm:py-12 flex-1">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 sm:gap-x-6 gap-y-8 sm:gap-y-10">
           {properties.map((prop, index) => (
              <PropertyCard 
                key={prop.id} 
@@ -147,38 +147,38 @@ export default function LandingPage() {
           ))}
         </div>
 
-        <div className="mt-20 flex flex-col items-center justify-center space-y-6">
-          <h2 className="text-2xl font-semibold">Continue explorando as opções</h2>
-          <button className="bg-zinc-900 text-white px-8 py-3 rounded-full font-bold hover:bg-zinc-800 transition-all hover:shadow-lg card-hover-lift">Ver Mais</button>
+        <div className="mt-12 sm:mt-20 flex flex-col items-center justify-center space-y-4 sm:space-y-6">
+          <h2 className="text-lg sm:text-2xl font-semibold">Continue explorando as opções</h2>
+          <button className="bg-zinc-900 text-white px-8 py-3 min-h-[44px] rounded-full font-bold hover:bg-zinc-800 transition-all hover:shadow-lg card-hover-lift">Ver Mais</button>
         </div>
 
         {/* Why Choose Us Section */}
-        <section className="mt-24 bg-white rounded-3xl p-10 md:p-16 shadow-sm border border-zinc-100 flex flex-col lg:flex-row gap-12 animate-fade-in-up">
+        <section className="mt-16 sm:mt-24 bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 md:p-16 shadow-sm border border-zinc-100 flex flex-col lg:flex-row gap-8 sm:gap-12 animate-fade-in-up">
           <div className="lg:w-1/3">
-            <h2 className="text-3xl font-extrabold text-zinc-900 mb-4 tracking-tight">O Destino Ideal no <span className="text-primary">Porto do Açu</span></h2>
-            <p className="text-zinc-600 leading-relaxed">Infraestrutura preparada para receber gestores de logística, engenheiros e familiares buscando tranquilidade em São João da Barra.</p>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-zinc-900 mb-3 sm:mb-4 tracking-tight">O Destino Ideal no <span className="text-primary">Porto do Açu</span></h2>
+            <p className="text-sm sm:text-base text-zinc-600 leading-relaxed">Infraestrutura preparada para receber gestores de logística, engenheiros e familiares buscando tranquilidade em São João da Barra.</p>
           </div>
-          <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="space-y-4">
-              <div className="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center">
-                <span className="material-symbols-outlined text-2xl">location_on</span>
+          <div className="lg:w-2/3 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
+            <div className="space-y-3 sm:space-y-4">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+                <span className="material-symbols-outlined text-xl sm:text-2xl">location_on</span>
               </div>
-              <h3 className="font-bold text-zinc-900">10 Min do Porto</h3>
-              <p className="text-sm text-zinc-500 leading-relaxed">Acesso facilitado para o complexo portuário sem o trânsito do centro da cidade.</p>
+              <h3 className="font-bold text-zinc-900 text-sm sm:text-base">10 Min do Porto</h3>
+              <p className="text-xs sm:text-sm text-zinc-500 leading-relaxed">Acesso facilitado para o complexo portuário sem o trânsito do centro da cidade.</p>
             </div>
-            <div className="space-y-4">
-              <div className="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center">
-                <span className="material-symbols-outlined text-2xl">wifi</span>
+            <div className="space-y-3 sm:space-y-4">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+                <span className="material-symbols-outlined text-xl sm:text-2xl">wifi</span>
               </div>
-              <h3 className="font-bold text-zinc-900">Conectividade</h3>
-              <p className="text-sm text-zinc-500 leading-relaxed">Internet de alta velocidade dedicada, ideal para home office e reuniões corporativas.</p>
+              <h3 className="font-bold text-zinc-900 text-sm sm:text-base">Conectividade</h3>
+              <p className="text-xs sm:text-sm text-zinc-500 leading-relaxed">Internet de alta velocidade dedicada, ideal para home office e reuniões corporativas.</p>
             </div>
-            <div className="space-y-4">
-              <div className="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center">
-                <span className="material-symbols-outlined text-2xl">security</span>
+            <div className="space-y-3 sm:space-y-4">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+                <span className="material-symbols-outlined text-xl sm:text-2xl">security</span>
               </div>
-              <h3 className="font-bold text-zinc-900">Comunidade Segura</h3>
-              <p className="text-sm text-zinc-500 leading-relaxed">Ambiente familiar com monitoramento na principal avenida de Grussaí.</p>
+              <h3 className="font-bold text-zinc-900 text-sm sm:text-base">Comunidade Segura</h3>
+              <p className="text-xs sm:text-sm text-zinc-500 leading-relaxed">Ambiente familiar com monitoramento na principal avenida de Grussaí.</p>
             </div>
           </div>
         </section>
