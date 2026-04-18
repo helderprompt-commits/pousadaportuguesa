@@ -42,7 +42,7 @@ export default function LandingPage() {
       <PublicNavbar />
 
       {/* Hero Video Section */}
-      <header className="pt-20 bg-white relative min-h-[500px] flex flex-col items-center justify-center">
+      <header className="pt-20 bg-white relative min-h-screen flex flex-col items-center justify-center">
         <div className="absolute inset-0 z-0 overflow-hidden">
            <video
              id="hero-video-1"
@@ -65,10 +65,6 @@ export default function LandingPage() {
              muted
              playsInline
              loop
-             onEnded={() => {
-               const v2 = document.getElementById('hero-video-2') as HTMLVideoElement;
-               if (v2) v2.play();
-             }}
            >
              <source src="/video-cima.mp4" type="video/mp4" />
            </video>
