@@ -50,7 +50,7 @@ export default function LandingPage() {
         
         <div className="relative z-10 w-full max-w-4xl mx-auto px-6 text-center animate-fade-in-up">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-8 tracking-wide drop-shadow-lg font-[family-name:var(--font-cinzel-decorative)]">
-            <span className="text-secondary">Pousada</span> <span className="text-tertiary">Portugueza</span>
+            <span className="text-primary">Pousada</span> <span className="text-tertiary">Portugueza</span>
           </h1>
           <p className="text-lg md:text-xl text-white/80 mb-8 font-body tracking-wide">Hospedagem premium em Grussaí — o charme luso no coração do Porto do Açu</p>
           
